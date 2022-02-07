@@ -1,0 +1,59 @@
+body{
+    background: #E1B9CD;
+}
+.slider{
+    margin-top: 150px;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+.presentation {
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #FEE2F9 0%, rgba(239, 227, 241, 0.16) 100%);
+    border-radius: 15px;
+}
+
+.presentation h1{
+    padding-bottom: 5%;
+}
+
+
