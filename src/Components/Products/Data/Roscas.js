@@ -38,4 +38,5 @@ export const Roscas = {
       value: 2,
     },
   ],
+  cart: []
 };

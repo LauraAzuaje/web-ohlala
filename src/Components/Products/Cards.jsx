@@ -2,7 +2,8 @@ import React from "react";
 import './Cards.css'
 
 export function Cards (props) {
-    const {image, name, description, value}=props
+    const {data}=props
+    let {image, name, description, value}=data
     return (
         <div className="productCard">
             <div className="productImage">
@@ -11,9 +12,15 @@ export function Cards (props) {
         <div className="productInfo">
             <h6>{name}</h6>
             <p>{description}</p>
-            <p>{value}</p>
-
-        </div>
+        </div>   
+            <div className="pb">
+            <p className="price"> $ {value}</p>
+            <span className="button">
+            <button>-</button>
+            <p>0</p> 
+            <button>+</button>
+            </span>
+            </div> 
         </div>
     )
 }

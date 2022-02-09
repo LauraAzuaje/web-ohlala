@@ -7,6 +7,7 @@ import { Header } from './Components/Header/Header';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Services } from './Components/Services/Services';
 import { NavBar } from './Components/NavBar/NavBar';
+import {ShoppingCart} from './Components/ShoppingCart/ShoppingCart'
 
 ReactDOM.render(
   <HashRouter>
@@ -19,10 +20,14 @@ ReactDOM.render(
       <Route path='/DonasyBombas' element={<ProductsList/>}/>
       <Route path='/Roscas' element={<ProductsList/>}/>
       <Route path='/Encargos' element={<ProductsList/>}/>
+      <Route path='/shoppingCart' element={<ShoppingCart />} />
+      
       </Route>
 
       <Route path='/services' element={<Services />} />
       <Route path='*' element={<Navigate replace to='/'/>}/>
+      <Route path='/shoppingCart' element={<ShoppingCart />} />
+      
      
       </Route>
    </Routes>

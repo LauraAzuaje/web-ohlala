@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
     width: 263px;
     height: 316px;
 
@@ -17,25 +19,55 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    height:;
+    
 }
 .productCard .productImage img{
-    width: 240px;
+    width: 220px;
     height: 164px;
 }
 
-.productCard .productInfo *{
+.productCard .productInfo {
     margin: 0;
     padding: 0;
+    width: 80%;
 
 }
 .productCard .productInfo{
-
+    display: flex;
+    align-items: left;
+    flex-direction: column;
 }
 
 .productInfo p:last-child{
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-style: italic;
 }
+
+.pb{
+    display: flex;
+    justify-content: space-between;
+    min-width: 180px;
+}
+
+.price{
+    padding-top: 40px;
+}
+
+.button {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:400px)
 {.productCard{

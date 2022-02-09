@@ -32,6 +32,7 @@ export const Home = () => {
         <p>Oh lala sweet factory, tienda de productos y servicios creada en el año 2015 en Cabimas Edo. Zulia Venezuela. 
 Pastelería artesanal con varias sucursales en la ciudad, nuestro producto principal son la donas y entre los servicios que ofrecemos puedes encontrar talleres virtuales y presenciales de pastelería.
 </p>
+
     </div>
     </body>
     </>

@@ -31,6 +31,7 @@ export const NavBar = () => {
 
         </ul>
     <div className="cart">
+    <Link to="/shoppingCart">Cart</Link>
        <box-icon color="white" name="cart"></box-icon>
        <span className="item_total">0</span>
     </div>

@@ -8,15 +8,13 @@ export const ProductsList = () => {
   const products = Categories[url]
   
 
+
   return (
   <div className='containerCards'>
     {products.products.map((products) => (
                         <Cards
                         key={products.id}
-                        name={products.name}
-                        image={products.image}
-                        description={products.description}
-                        value={products.value}
+                        data={products}
                         />
     ))}
   </div>
