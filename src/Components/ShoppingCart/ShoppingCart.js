@@ -21,9 +21,7 @@ export const ShoppingCart = () => {
         <h3>Productos</h3>
         <article className="Box"></article>
         {cart.map((product) => (<Cards key={product.id} data={products.find(item => item.id === product.id )} addToCart={addToCart}/>))}
-        <h3>Productos</h3>
         <article className="Box"></article>
-        
         </div>
     )
 }

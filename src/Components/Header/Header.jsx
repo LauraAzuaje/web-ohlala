@@ -27,9 +27,8 @@ export const Header = () => {
                 </li>
         </ul>
     <div className="cart">
-    <Link to="/shoppingCart">Cart</Link>
-       <box-icon color="white" name="cart"></box-icon>
-       <span className="item_total">0</span>
+        <Link to="/shoppingCart"><box-icon color="white" name="cart"></box-icon></Link>
+        <span className="item_total">0</span>
     </div>
 
 </header>
