@@ -48,5 +48,4 @@ export const DonasyBombas = {
     },
   ],
   
-  cart: []
 };

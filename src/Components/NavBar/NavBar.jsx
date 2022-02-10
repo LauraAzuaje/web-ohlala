@@ -3,9 +3,15 @@ import './NavBar.css';
 import logo from "../../images/logo.png"
 import 'boxicons';
 import { Link, Outlet } from 'react-router-dom';
+import { useContext } from 'react';
+import CartContext from "../../Contexts/CartContext";
 
 
 export const NavBar = () => {
+    const [state] = useContext(CartContext);
+    const {cart} = state 
+
+
   return (
       <>
 <header>
@@ -32,7 +38,7 @@ export const NavBar = () => {
         </ul>
     <div className="cart">
         <Link to="/shoppingCart"><box-icon color="white" name="cart"></box-icon></Link>
-        <span className="item_total">0</span>
+        <span className="item_total">{cart.length}</span>
     </div>
 
 </header>

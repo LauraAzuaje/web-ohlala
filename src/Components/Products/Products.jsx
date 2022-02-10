@@ -11,15 +11,12 @@ export const ProductsList = () => {
 
 
   return (
-  <div className='containerCards'>
-    {products.products.map((products) => (
-                        <Cards
-                        key={products.id}
-                        data={products}
-                        />
-    ))}
-  </div>
-  )
+    <div className="containerCards">
+      {products.products.map((products) => (
+        <Cards key={products.id} data={products} />
+      ))}
+    </div>
+  );
 };
 
 
