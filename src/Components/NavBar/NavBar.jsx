@@ -45,6 +45,7 @@ export const NavBar = () => {
 <div className='hola'>
     <Outlet/>
 </div>
+
 </>
   )
 };

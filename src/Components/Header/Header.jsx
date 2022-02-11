@@ -33,8 +33,14 @@ export const Header = () => {
 
 </header>
 <div className='hola'>
-    <Outlet/>
+    <Outlet/> 
 </div>
+<footer className='footer'>
+        <p>Contactanos</p>
+        <a href='https://www.instagram.com/ohlalasweet_'>
+        <box-icon color="white" size="s" name='instagram' type='logo' ></box-icon></a> <a href='https://wa.me/573128206815?text='> <box-icon color="white" size="s" name='whatsapp' type='logo' ></box-icon></a>
+       <p>Site By Laura Azuaje <a href='https://github.com/LauraAzuaje'><box-icon color="white" name='github' type='logo' ></box-icon></a></p> 
+        </footer>
 </>
   )
 };

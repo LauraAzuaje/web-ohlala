@@ -22,6 +22,7 @@ export function Cards(props) {
   };
 
   return (
+    <>
     <div className="productCard">
       <div className="productImage">
         <img src={image} alt={"image " + name} />
@@ -52,6 +53,7 @@ export function Cards(props) {
         </span>
       </div>
     </div>
-
+    
+    </>
   );
 }
