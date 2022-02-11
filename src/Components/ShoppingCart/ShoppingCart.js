@@ -1,21 +1,19 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import { Cards } from "../Products/Cards";
 import CartContext from "../../Contexts/CartContext";
+import './ShoppingCart.css';
 
 export const ShoppingCart = () => {
-  const [state, dispatch] = useContext(CartContext);
-  console.log(state.cart.Quantity)
-//   const { products, cart } = state;
+  const [state] = useContext(CartContext);
+  
 
-  const delfromcart = () => {};
-  const clearcart = () => {};
+
   return (
-    <div className="ShCart">
-      <h2>Carrito de compras</h2>
-      <h3>Productos</h3>
-      <article className="Box"></article>
+    <>
+    <div className="shCart">
+  
       {state?.cart?.map((product) => (
-        <div key={"div" + product.id}>
+        <div className="Box" key={"div" + product.id}>
           <Cards
             key={product.id}
             data={state.products.find((item) => item.id === product.id)}
@@ -23,7 +21,13 @@ export const ShoppingCart = () => {
           />
         </div>
       ))}
-      <article className="Box"></article>
+ 
     </div>
+  <div className="total">
+        <p>Total=$0</p>
+    <button className="buttonBuy">Realizar pedido</button>
+  </div>
+
+    </>
   );
 };

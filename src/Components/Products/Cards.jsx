@@ -9,7 +9,7 @@ export function Cards(props) {
   const [state, dispatch] = useContext(CartContext);
 
   let { image, name, description, value, id } = data;
-  console.log(Quantity)
+  
   const [num, setNum] = useState(state.cart.Quantity === undefined ? 0:state.cart.Quantity);
 
 
@@ -52,5 +52,6 @@ export function Cards(props) {
         </span>
       </div>
     </div>
+
   );
 }

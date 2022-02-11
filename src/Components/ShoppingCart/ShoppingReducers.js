@@ -24,7 +24,7 @@ export function ShoppingReducer(state=ShoppingInitialState, action) {
       }
       obj.cart.push({ id: action.payload, Quantity: 1 });
       return obj;
-    
+  
     case TYPES.REMOVE_ONE_FROM_CART: {
       const obj = {
         ...state,
@@ -41,12 +41,7 @@ export function ShoppingReducer(state=ShoppingInitialState, action) {
       }
       return obj;
     }
-    case TYPES.REMOVE_ALL_FROM_CART: {
-      break;
-    }
-    case TYPES.CLEAR_CART: {
-      break;
-    }
+
     default:
       return state;
   }
