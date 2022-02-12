@@ -33,3 +33,11 @@
     margin-right: 10%;
 }
 
+input{
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid #fff;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}

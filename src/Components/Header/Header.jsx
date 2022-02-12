@@ -8,10 +8,7 @@ import { Link, Outlet } from 'react-router-dom';
 export const Header = () => {
   return (
       <>
-<header>
-    <div className="menu">
-    <box-icon color="white" size="lg" name="menu"></box-icon>
-    </div>  
+<header> 
         <div className="logo">
             <img src={logo} width="150" alt="" />
         </div>
@@ -38,7 +35,7 @@ export const Header = () => {
 <footer className='footer'>
         <p>Contactanos</p>
         <a href='https://www.instagram.com/ohlalasweet_'>
-        <box-icon color="white" size="s" name='instagram' type='logo' ></box-icon></a> <a href='https://wa.me/573128206815?text='> <box-icon color="white" size="s" name='whatsapp' type='logo' ></box-icon></a>
+        <box-icon color="white" name='instagram' type='logo' ></box-icon></a> <a href='https://wa.me/573128206815?text='> <box-icon color="white" name='whatsapp' type='logo' ></box-icon></a>
        <p>Site By Laura Azuaje <a href='https://github.com/LauraAzuaje'><box-icon color="white" name='github' type='logo' ></box-icon></a></p> 
         </footer>
 </>

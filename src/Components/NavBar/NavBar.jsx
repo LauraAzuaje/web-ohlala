@@ -15,9 +15,6 @@ export const NavBar = () => {
   return (
       <>
 <header>
-    <div className="menu1">
-    <box-icon color="white" size="lg" name="menu"></box-icon>
-    </div>
         <div className="logo">
             <img src={logo} width="150" alt="" />
         </div>

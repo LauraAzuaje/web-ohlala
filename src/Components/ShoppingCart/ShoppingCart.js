@@ -36,12 +36,12 @@ export const ShoppingCart = () => {
       </div>
       <div className="total">
         <p>Total=$ {getTotal()}</p>
-        <input
+        <input 
           onChange={(e) => setNombre(e.target.value)}
           value={nombre}
           placeholder="Nombre"
         />
-        <input
+        <input 
           onChange={(e) => setDireccion(e.target.value)}
           value={direccion}
           placeholder="Dirección"
